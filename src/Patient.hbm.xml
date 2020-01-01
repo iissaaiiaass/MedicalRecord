@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name = "Patient" table = "Patient">
+      
+      <meta attribute = "class-description">
+         This class contains the employee detail. 
+      </meta>
+      
+      <id name = "ssn" type = "string" column = "ssn">
+         <generator class="assigned"/>
+      </id>
+      
+      <property name = "firstName" column = "FirstName" type = "string"/>
+      <property name = "lastName" column = "LastName" type = "string"/>
+      <property name = "dob" column = "dob" type = "date"/>
+      <property name = "phoneNo" column = "phoneNo" type = "string"/>
+      <property name = "address1" column = "address1" type = "string"/>
+      <property name = "address2" column = "address2" type = "string"/>
+      <property name = "city" column = "city" type = "string"/>
+      <property name = "zipcode" column = "zipcode" type = "string"/>
+      <property name = "allergy1" column = "allergy1" type = "string"/>
+      <property name = "allergy2" column = "allergy2" type = "string"/>
+      <property name = "allergy3" column = "allergy3" type = "string"/>
+      <property name = "photo" column = "photo" type = "string"/>
+   </class>
+</hibernate-mapping>
